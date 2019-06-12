@@ -1,0 +1,70 @@
+
+.entrance__logIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 45px;
+  margin-bottom: 1rem;
+  background-color: #4692ce;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background-color: #3773a2;
+  }
+
+  & img {
+    margin-right: 1rem;
+  }
+}
+
+.entrance__request {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #4692ce;
+  text-decoration: underline;
+}
+
+.entrance__mail {
+  display: flex;
+  font-size: 18px;
+  color: #4692ce;
+
+  & img {
+    margin-right: .5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .entrance {
+    margin-top: 2rem;
+    order: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .entrance {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .entrance {
+    text-align: center;
+  }
+
+  .entrance__logIn {
+    min-width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .entrance__mail {
+    justify-content: center;
+  }
+}

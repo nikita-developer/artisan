@@ -1,0 +1,30 @@
+
+.logo {
+  max-width: 170px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.logo__description {
+  margin-top: -10px;
+  font-size: 12px;
+  color: #1f3d73;
+  text-transform: uppercase;
+  text-align: right;
+
+  & span {
+    display: block;
+    font-size: 10px;
+    color: #adb0b6;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

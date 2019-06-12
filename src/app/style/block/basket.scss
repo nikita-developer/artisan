@@ -1,0 +1,48 @@
+
+.basket {
+  display: flex;
+}
+
+.basket__Bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .5rem;
+  height: 45px;
+  width: 45px;
+  background-color: #4692ce;
+}
+
+.basket__description {
+  line-height: 1.1;
+  font-size: 14px;
+  color: #343f53;
+
+  & span {
+    display: block;
+    font-size: 14px;
+    color: #4692ce;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .basket {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .basket {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .basket {
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
